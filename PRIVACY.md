@@ -16,4 +16,4 @@
   metrics to Google under its terms. VVA is not described as having zero network
   traffic or zero third-party telemetry. See https://developers.google.com/ml-kit/terms.
 
-Release preparation note: final dependency disclosures are still being checked.
+Dependency notices and included MPL sources accompany the release packages.
