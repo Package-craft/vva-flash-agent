@@ -38,9 +38,9 @@ third-party source, not the VVA application development repository. MPL-licensed
 files retain their MPL rights, including modification and redistribution.
 No VVA modifications to these three package payloads are introduced by this build.
 
-- certifi 2026.10.23: `notices/sources/certifi-2026.10.23.tar.gz` in the download package; [upstream archive](https://files.pythonhosted.org/packages/fd/11/b524cbd9bbdaca58608e4cf4053fd463417549e1959fa8d3aa18319f9555/certifi-2026.10.23.tar.gz).
-- tqdm 4.70.0: `notices/sources/tqdm-4.70.0.tar.gz` in the download package; [upstream archive](https://files.pythonhosted.org/packages/21/3b/6c24bec5be5e743ffd99576daa5cc077722fc7d5bbc00bd133fa0c698dc6/tqdm-4.70.0.tar.gz).
-- pathspec 1.1.1: `notices/sources/pathspec-1.1.1.tar.gz` in the download package; [upstream archive](https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz).
+- certifi 2026.10.23: `notices/sources/certifi-2026.10.23-source.zip` in the download package; [upstream archive](https://files.pythonhosted.org/packages/fd/11/b524cbd9bbdaca58608e4cf4053fd463417549e1959fa8d3aa18319f9555/certifi-2026.10.23.tar.gz).
+- tqdm 4.70.0: `notices/sources/tqdm-4.70.0-source.zip` in the download package; [upstream archive](https://files.pythonhosted.org/packages/21/3b/6c24bec5be5e743ffd99576daa5cc077722fc7d5bbc00bd133fa0c698dc6/tqdm-4.70.0.tar.gz).
+- pathspec 1.1.1: `notices/sources/pathspec-1.1.1-source.zip` in the download package; [upstream archive](https://files.pythonhosted.org/packages/5a/82/42f767fc1c1143d6fd36efb827202a2d997a375e160a71eb2888a925aac1/pathspec-1.1.1.tar.gz).
 
 ## Runtime inventory
 
