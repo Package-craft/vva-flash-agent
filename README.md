@@ -65,8 +65,9 @@ The one-time USB credential is imported through VVA's app-owned directory, encry
 
 ## Release status
 
-The signing pipeline and packages are being validated. Binary publication remains
-on hold while the non-debuggable build's real-device pairing and final third-party
-notice inventory are checked. Existing debug installations have not been replaced.
+Release signing, bilingual package reconstruction and isolated real-device pairing
+have passed. The device test used a separately named non-debuggable build signed
+with the release key; it did not replace the existing debug installation. Migration
+of that old installation is still a separate step. This repository remains private.
 
 See [signing](SIGNING.md), [privacy](PRIVACY.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
