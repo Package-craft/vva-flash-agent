@@ -1,0 +1,8 @@
+*.apk
+*.zip
+*.p12
+*.jks
+*.keystore
+*.dpapi
+staging/
+device-workspace/
