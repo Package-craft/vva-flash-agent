@@ -11,13 +11,17 @@ public certificate is not a private key.
 To inspect an APK with Android SDK Build Tools:
 
 ```text
-apksigner verify --verbose --print-certs VVA-0.1.77-preview.1.apk
+apksigner verify --verbose --print-certs VVA-0.1.77-preview.2.apk
 ```
 
 Compare the signer with the official certificate, not merely the app name/icon.
 The signature does not certify user-added toolbox files or guarantee that a host
 computer is clean. This is Android APK signing, not Windows Authenticode signing
 of every bundled script/runtime.
+
+The USB import path has passed on a release-signed, non-debuggable sibling app on
+an actual Xiaomi phone, including credential retrieval after process restart.
+This does not claim that the production package replaced the old installation.
 
 Old development builds use a different debug certificate. Do not uninstall an
 existing test installation merely to bypass a signature conflict: that can lose
