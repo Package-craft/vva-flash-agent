@@ -26,10 +26,11 @@ Build availability and validation status are documented in the Release notes.
 
 ## Why VVA?
 
-- **No VVA account or VVA-hosted relay.** The phone-to-PC connection uses USB. Conversations, task archives, and operation records stay on your devices or in your chosen workspace. Cloud models still require internet access on the phone and receive the task content included in requests.
-- **Your choice of model.** Choose a provider and supply your own API key. Working on another PC does not require setting up your model account or API credentials there.
-- **Keep what you learn from a task.** Save operation cards, scripts, and task archives locally for later retrieval and reuse. Repeated work can require less trial and error, although application updates and layout changes may need fresh inspection.
-- **Free to use.** Your chosen model provider may charge separately for API usage.
+- **Local and private:** We will not receive any information about you.
+- **A portable workspace:** A phone, a USB cable, and a USB drive let you operate a compatible Windows PC, with the runtime included. End the session with one action to clean up temporary files and keep your work.
+- **Built for faster operation:** Direct control-text reads, background scripts, batched actions, and precise targeting reduce screenshots and unnecessary round trips.
+- **Make it your own:** Customize SOUL, skills, Hooks, compatible plugins, and your USB toolbox to suit your needs.
+- **⚡ Put your phone to work:** Experimental Lightning mode supports parallel local computation and subagent delegation, sharing the workload across the devices you carry.
 
 ## What can it do?
 
