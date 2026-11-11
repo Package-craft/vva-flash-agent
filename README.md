@@ -103,24 +103,11 @@ This is a **small-sample comparison from revision 73**: the same phone, DeepSeek
 
 Lightning mode can increase model usage, battery drain, and heat. Enable it when the task benefits from parallel work.
 
-## Privacy: your workspace stays in your hands
-
-**VVA does not require you to move your private workspace into our cloud. There is no VVA account, VVA-hosted conversation storage, or VVA server relaying phone-to-PC control.**
-
-- **The control connection is local.** The phone and PC communicate over USB, with the companion listening on the PC's loopback interface. Device control does not need a VVA cloud relay.
-- **Records stay on your own devices.** Conversations, task archives, evidence, and operation records are stored on the phone or in your chosen workspace. You can manage, back up, and clear them yourself. Material saved in the USB workspace travels with the drive.
-- **Model credentials stay on the phone.** API keys use Android Keystore-backed encrypted storage. Normal pairing does not require configuring your model account or API key on the target PC.
-- **No permanent PC service is required.** The companion starts for the session; it does not register a Windows service or startup entry. You can stop the session connection when finished.
-
-**Local operation does not mean a cloud model cannot see task content.** Messages, file contents, screenshots, and tool results included in model requests may be sent to your chosen provider and are subject to its data policy. VVA does not run that relay or control the provider's retention policy.
-
-OCR runs on-device, but its SDK may send operational metrics; see the [privacy notice](PRIVACY.md). Used workspaces can contain sensitive information. Share clean distribution packages and redact private details before posting feedback.
-
 ## Safety and permissions
 
 - **Use only devices you own or are authorized to operate.** Ordinary tasks do not require Android root or Windows administrator rights.
 - **Define the scope of administrator work.** Use `Start-Administrator.cmd` (`启动-管理员.cmd` in the Chinese package) and confirm Windows UAC yourself. Full Trust and Approve for me do not grant operating-system administrator rights.
-- **Use official downloads.** VVA can perform privileged operations. Check the source, version, and signature information in the [signing guide](SIGNING.md).
+- **Please make sure you are using the official software.**
 - **End the session; keep the work.** `Stop.cmd` stops this package's companion, releases its session channel, and cleans its temporary session state. Workspaces, reports, and phone conversations remain. It does not erase all operating-system or third-party logs, caches, or changes, and it does not promise a traceless session. Incomplete cleanup is reported.
 - **Write down protection rules.** Put requirements in SOUL, skills, or task instructions—for example, “do not modify this directory,” “keep a backup before overwriting,” or “do not send this document to a cloud model.” Use permissions and backups as well; written instructions do not replace them. Keep passwords and API keys out of public feedback.
 
