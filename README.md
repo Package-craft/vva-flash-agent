@@ -117,6 +117,8 @@ VVA develops the mobile interface, device control, task recovery, local archives
 
 We love this project and use it ourselves. Questions, suggestions, and ambitious ideas are welcome.
 
+Official contact: [vvaofficial@outlook.com](mailto:vvaofficial@outlook.com).
+
 Include the version, device model, reproduction steps, and redacted error details when reporting a problem.
 
 This is my first project being prepared for a public release. I hope you enjoy it.
