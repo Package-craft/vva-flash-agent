@@ -1,4 +1,4 @@
-# VVA Agent — 随身在手机，伸手到电脑
+# VVA Agent
 
 [English](README.md)
 
@@ -18,7 +18,7 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 这是我的第一个公开项目，也是一个还在生长的尝试。欢迎拿真实任务来试试它——哪里顺手，哪里笨，哪里让你想说“这也能做？”都欢迎告诉我。
 
-[下载公开预览版](https://github.com/sunnyfox-qinghu/VVA/releases/tag/v0.1.79-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
+[下载公开预览版](https://github.com/sunnyfox-qinghu/VVA-Agent/releases/tag/v0.1.79-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
 
 可下载的构建及验收范围以对应 Release 说明为准。
 
@@ -58,7 +58,7 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 `90` 是许可资料，`99-SHA256SUMS.txt` 是文件校验表；它们放在下载列表最后，许可资料也已包含在本体和 U 盘包里。
 
-1. 从官方 [Releases](https://github.com/sunnyfox-qinghu/VVA/releases) 获取匹配版本的 APK 和完整 U 盘包。
+1. 从官方 [Releases](https://github.com/sunnyfox-qinghu/VVA-Agent/releases) 获取匹配版本的 APK 和完整 U 盘包。
 2. 安装 APK，在 App 中选择模型供应商，填入自己的 API Key。
 3. 将完整 U 盘包解压到 U 盘中的可写文件夹，不要在压缩包预览里直接运行。
 4. 在手机系统设置中开启开发者选项和 **USB 调试**。接上电脑后解锁手机，接受该电脑的调试授权。
