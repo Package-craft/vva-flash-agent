@@ -16,7 +16,7 @@ When there is work to do on a Windows PC, connect a USB cable and plug in your U
 
 There is no VVA account to register and no VVA-hosted control relay. Records stay on your devices, and you choose the model. When you use a cloud model, relevant task content is still sent to that provider.
 
-The first public preview is now available. VVA is free to use; bring your own model API key.
+The software is free, but you need to supply your own API key.
 
 This is my first public project, and it is still growing. Try it on real tasks and tell me what feels smooth, what feels clumsy, and what surprises you. I would love to hear about it.
 
@@ -78,7 +78,7 @@ Controlling the phone's own interface requires Accessibility permission; floatin
 
 See the [USB setup guide](USB.en.md) for permissions and troubleshooting. You can turn off USB debugging when it is not in use; do not authorize debugging on an untrusted PC.
 
-## Making work faster
+## How it gets faster
 
 VVA takes its name from the VVA-14. We have worked on the different paths an assistant can take through a task:
 
@@ -105,7 +105,7 @@ Lightning mode can increase model usage, battery drain, and heat. Enable it when
 
 ## Safety and permissions
 
-- **Use only devices you own or are authorized to operate.** Ordinary tasks do not require Android root or Windows administrator rights.
+- **Use only devices you own or are authorized to operate.**
 - **Define the scope of administrator work.** Use `Start-Administrator.cmd` (`启动-管理员.cmd` in the Chinese package) and confirm Windows UAC yourself. Full Trust and Approve for me do not grant operating-system administrator rights.
 - **Please make sure you are using the official software.**
 - **End the session; keep the work.** `Stop.cmd` stops this package's companion, releases its session channel, and cleans its temporary session state. Workspaces, reports, and phone conversations remain. It does not erase all operating-system or third-party logs, caches, or changes, and it does not promise a traceless session. Incomplete cleanup is reported.
@@ -113,9 +113,9 @@ Lightning mode can increase model usage, battery drain, and heat. Enable it when
 
 ## Make it yours
 
-- Edit **SOUL**, write **skills**, configure **Hooks**, or install compatible plugins. Native dependencies intended for desktop systems may not work on Android.
+- Edit **SOUL**, write **skills**, configure **Hooks**, or install compatible plugins.
 - Prepare a folder named `tools-pack-for-model` on your USB drive with tools, scripts, and instructions you want the model to use. Full Trust exposes the toolbox invocation entry points. You can edit the supplied template or select another directory with the same name. Third-party tools may require a separate download or acceptance of their terms.
-- Ask the model to write and test script extensions, then activate or roll them back with authorization. This is different from automatically modifying, rebuilding, or upgrading the entire app; that is not a promised release capability.
+- Ask the model to write and test script extensions, then activate or roll them back with authorization.
 
 ## Platforms
 
