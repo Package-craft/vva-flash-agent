@@ -1,73 +1,122 @@
 # VVA
 
-[中文说明](README.zh-CN.md)
+[简体中文](README.zh-CN.md)
 
-**Release preparation — this repository and all release drafts remain private.**
+> Your first personal secretary and assistant, right on your devices.
 
-VVA brings a phone, a USB cable and a portable workspace together. The Android app
-runs the agent; the Windows companion provides local desktop and background tools.
-It builds on Hermes, with VVA-specific Android, USB and workflow capabilities.
+Find information, organize files, keep track of tasks, write scripts, prepare files for rooting a device, or investigate a PC that is behaving strangely—even one showing signs of malware. Tell VVA what you want to accomplish and work through it together.
 
-The app is free to use. You supply your own model provider and API key; provider
-usage may be billed separately. The development source is not being published at
-this stage. The repository contains distribution documentation and release drafts.
+VVA runs on an Android phone. To work on a PC, plug in your USB drive, connect the phone by USB, and start the bundled companion. Within the permissions you grant, VVA can read interfaces, operate applications, handle files, and run scripts.
 
-## What to download when a release is ready
+**A phone, a USB cable, and a USB drive: a workspace you can carry with you.**
 
-- The signed VVA APK for Android 11+.
-- The complete Windows 10/11 x64 USB package in Chinese or English.
-- Authorized redistributors use the separately prepared main/payload and two-script
-  USB packages; see [distribution layout](DISTRIBUTION.md).
+VVA is in release preparation. This repository remains private and the packages have not been publicly released. This page describes the current implementation; each Release identifies its available build and validation status.
 
-No VVA account, wireless connection or cloud synchronization is required. Model API
-requests still need an internet connection. This preview does not promise full
-Windows/Android compatibility across every device.
+## Why VVA?
 
-## Permissions and setup
+- **No VVA account or VVA-hosted relay.** The phone-to-PC connection uses USB. Conversations, task archives, and operation records stay on your devices or in your chosen workspace. Cloud models still require internet access on the phone and receive the task content included in requests.
+- **Your choice of model.** Choose a provider and supply your own API key. Working on another PC does not require setting up your model account or API credentials there.
+- **Keep what you learn from a task.** Save operation cards, scripts, and task archives locally for later retrieval and reuse. Repeated work can require less trial and error, although application updates and layout changes may need fresh inspection.
+- **Free to use.** Your chosen model provider may charge separately for API usage.
 
-## Requirements
+## What can it do?
 
-- Windows 10/11 **x64**; Windows PowerShell 5.1.
-- Android 11 or newer, the matching VVA app, and a USB **data** cable.
-- A model provider and API key configured by the user in VVA. No shared API key is included. Model API usage may cost money even though VVA is free.
-- Internet on the phone for model requests. The phone-to-PC channel uses USB and a loopback listener, not a cloud account or wireless remote-desktop service.
+- Read pages, find information, operate Android apps, and work with images and files you import.
+- Control a Windows PC over USB: find content across windows, enter text, and adjust settings.
+- Write and run scripts, analyze logs, process files in batches, and help troubleshoot software—including running diagnostic tools you authorize.
+- Organize material, save progress, and schedule tasks.
+- Keep results, evidence, and handoff notes in the workspace so a new conversation can retrieve them and continue saved work.
 
-## Permissions: enable only what you use
+These are starting points. Bring your own tasks, and let us know what is missing or awkward to use.
 
-| Feature | Required action |
-|---|---|
-| Install the APK | Allow installation from the browser/file manager used to open it, when Android asks. |
-| Connect this phone to a PC | In Android Developer options, enable **USB debugging**. Unlock the phone and accept the computer's RSA authorization prompt. Use a data-capable cable; a manufacturer USB driver may be needed on Windows. |
-| Control the PC | In Start.cmd, approve the session, then desktop access and/or command execution as needed. These are separate choices. |
-| Control the phone's own screen | Enable VVA's Accessibility service. This is not required merely to control a PC through USB. Android may require Allow restricted settings for a sideloaded app. |
-| Floating chat | Allow display over other apps. |
-| Camera questions | Allow the camera when opening that feature. |
-| Long-running tasks | Allow notifications so task status and Stop remain visible. If the phone vendor suspends VVA, allow background activity for VVA; no blanket battery/security changes are required. |
-| Exact scheduled tasks | Allow exact alarms when Android requests it for a schedule that needs them. |
-| Import documents/images | Select the specific files in the system picker; all-files access is not required. |
+While a task is running, you can send more messages, add constraints, request a reassessment, or stop it. The floating chat keeps the conversation close at hand; detailed tool activity is folded into the details view. Stopping interrupts further execution; it does not automatically undo actions already submitted to another application.
 
-Root, an unlocked bootloader and Windows administrator access are **not required** for ordinary operation. Full Trust and Approve for me in VVA do not bypass Android permissions or Windows UAC.
+## Quick start
 
-## Start and stop
+You need **Android 11 or newer**, a USB **data** cable, and a **Windows 10/11 x64** PC. The USB package includes Python and ADB; the PC does not need a separate Python installation.
 
-1. Extract the **complete** official USB package to a writable folder or USB drive. Do not run it inside the ZIP viewer.
-2. Install the matching APK on the phone. If included, `Update-Phone.cmd` uses `adb install -r`; it does not uninstall the app or clear its data.
-3. Connect and unlock the phone; accept USB debugging authorization.
-4. Run **Start.cmd**, enter `START`, choose the desktop/command permissions, and select the intended USB phone even if only one is connected.
-5. Keep the status window open while working. Press **S**, or run **Stop.cmd**, to end this package's session. `Clean.cmd` uses the same cleanup path after an unexpected window close.
+1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/VVA/releases). Public downloads are not open yet.
+2. Install the APK, select a model provider in the app, and enter your own API key.
+3. Extract the complete USB package into a writable folder on your USB drive. Do not run it inside an archive preview.
+4. Enable Developer options and **USB debugging** in Android settings. Connect and unlock your phone, then accept that PC's debugging authorization.
+5. On a PC you own or are authorized to use, connect the drive and phone, run `Start.cmd`, enter `START`, grant desktop and/or command access as needed, and select the correct phone. Keep the connection and launcher window open while working.
+6. When finished, press **S** in the launcher or run `Stop.cmd`. After an unexpected exit, use `Clean.cmd`. The Chinese package uses `启动.cmd`, `终止.cmd`, and `清理.cmd` respectively.
 
-For an explicitly requested administrator task, use `Start-Administrator.cmd` and personally confirm Windows UAC once. Ordinary startup keeps ordinary privileges. No Windows service or startup entry is installed.
+Controlling the phone's own interface requires Accessibility permission; floating chat requires permission to display over other apps. Long-running and scheduled tasks may also need notification, background-execution, and alarm permissions as prompted by Android. Controlling only the PC over USB does not require enabling the phone's Accessibility service.
 
-If the default port is occupied, use `Start.cmd -Port 18746` and `Stop.cmd -Port 18746`. Do not stop unrelated processes to free it.
+See the [USB setup guide](USB.en.md) for permissions and troubleshooting. You can turn off USB debugging when it is not in use; do not authorize debugging on an untrusted PC.
 
-The one-time USB credential is imported through VVA's app-owned directory, encrypted in Android Keystore-backed storage and removed from the import directory. Release builds do not require `run-as` or a debuggable APK.
+## Making work faster
 
+VVA takes its name from the VVA-14. We have worked on the different paths an assistant can take through a task:
 
-## Release status
+- Read control text directly when available, use background scripts where appropriate, and use screenshots, OCR, or local crops when visual inspection is needed.
+- Use semantic targeting, element indexing, action batches, background-window reads, and action receipts on the PC.
+- Verify input when readback is available, check the target when switching windows, and inspect the actual state after reconnecting to reduce mistakes and duplicate submissions.
 
-Release signing, bilingual package reconstruction and isolated real-device pairing
-have passed. The device test used a separately named non-debuggable build signed
-with the release key; it did not replace the existing debug installation. Migration
-of that old installation is still a separate step. This repository remains private.
+The aim is simple: fewer screenshots, less repeated searching for controls, and fewer unnecessary round trips—so the assistant can establish what happened and what comes next.
 
-See [signing](SIGNING.md), [privacy](PRIVACY.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+The phone contributes too: local computation, information processing, and background jobs can run there. When the data is already on the PC, it can be processed in place, with only the needed results sent back.
+
+## ⚡ Lightning mode — experimental
+
+Lightning mode lets the main agent delegate independent subtasks and, when device resources permit, increases local compute concurrency. Analysis, computation, and waiting can overlap. The main agent still coordinates device input.
+
+| Approach | Median elapsed time |
+| --- | ---: |
+| One agent, one batch | About 39.3 seconds |
+| Three subagents in Lightning mode | About 29.5 seconds |
+
+This is a **small-sample comparison from revision 73**: the same phone, DeepSeek Flash with max reasoning, and the same four independent data-processing tasks, with two runs per approach. Outputs passed checks against independently computed answers. Timing covers prearranged compute batches, excluding additional planning and synthesis by the main model. Not every task can be divided, and other models may perform differently. See the [benchmark notes](BENCHMARKS.md).
+
+Lightning mode can increase model usage, battery drain, and heat. Enable it when the task benefits from parallel work.
+
+## Privacy: your workspace stays in your hands
+
+**VVA does not require you to move your private workspace into our cloud. There is no VVA account, VVA-hosted conversation storage, or VVA server relaying phone-to-PC control.**
+
+- **The control connection is local.** The phone and PC communicate over USB, with the companion listening on the PC's loopback interface. Device control does not need a VVA cloud relay.
+- **Records stay on your own devices.** Conversations, task archives, evidence, and operation records are stored on the phone or in your chosen workspace. You can manage, back up, and clear them yourself. Material saved in the USB workspace travels with the drive.
+- **Model credentials stay on the phone.** API keys use Android Keystore-backed encrypted storage. Normal pairing does not require configuring your model account or API key on the target PC.
+- **No permanent PC service is required.** The companion starts for the session; it does not register a Windows service or startup entry. You can stop the session connection when finished.
+
+**Local operation does not mean a cloud model cannot see task content.** Messages, file contents, screenshots, and tool results included in model requests may be sent to your chosen provider and are subject to its data policy. VVA does not run that relay or control the provider's retention policy.
+
+OCR runs on-device, but its SDK may send operational metrics; see the [privacy notice](PRIVACY.md). Used workspaces can contain sensitive information. Share clean distribution packages and redact private details before posting feedback.
+
+## Safety and permissions
+
+- **Use only devices you own or are authorized to operate.** Ordinary tasks do not require Android root or Windows administrator rights.
+- **Define the scope of administrator work.** Use `Start-Administrator.cmd` (`启动-管理员.cmd` in the Chinese package) and confirm Windows UAC yourself. Full Trust and Approve for me do not grant operating-system administrator rights.
+- **Use official downloads.** VVA can perform privileged operations. Check the source, version, and signature information in the [signing guide](SIGNING.md).
+- **End the session; keep the work.** `Stop.cmd` stops this package's companion, releases its session channel, and cleans its temporary session state. Workspaces, reports, and phone conversations remain. It does not erase all operating-system or third-party logs, caches, or changes, and it does not promise a traceless session. Incomplete cleanup is reported.
+- **Write down protection rules.** Put requirements in SOUL, skills, or task instructions—for example, “do not modify this directory,” “keep a backup before overwriting,” or “do not send this document to a cloud model.” Use permissions and backups as well; written instructions do not replace them. Keep passwords and API keys out of public feedback.
+
+## Make it yours
+
+- Edit **SOUL**, write **skills**, configure **Hooks**, or install compatible plugins. Native dependencies intended for desktop systems may not work on Android.
+- Prepare a folder named `tools-pack-for-model` on your USB drive with tools, scripts, and instructions you want the model to use. Full Trust exposes the toolbox invocation entry points. You can edit the supplied template or select another directory with the same name. Third-party tools may require a separate download or acceptance of their terms.
+- Ask the model to write and test script extensions, then activate or roll them back with authorization. This is different from automatically modifying, rebuilding, or upgrading the entire app; that is not a promised release capability.
+
+## Platforms
+
+| Platform | Status |
+| --- | --- |
+| Android 11+ — phone | Supported; background and permission behavior varies by manufacturer |
+| Windows 10/11 x64 — PC | Supported |
+| macOS / Linux — PC | No companion provided yet |
+| iOS | Not currently supported |
+
+## Credits and licensing
+
+VVA develops the mobile interface, device control, task recovery, local archives, and extension capabilities around a phone, USB, and portable workspace. Its runtime reuses core code from Nous Research's [Hermes Agent](https://github.com/NousResearch/hermes-agent), including the agent loop and native context compression, under the MIT license, with VVA-specific adaptations and mechanisms. VVA is not affiliated with Nous Research.
+
+**VVA is currently free to use; its development source is not publicly released.** Distribution rules for VVA-authored components are in [DISTRIBUTION](DISTRIBUTION.md). Third-party components and their own licenses are listed in [THIRD_PARTY_NOTICES](THIRD_PARTY_NOTICES.md).
+
+## Feedback
+
+We love this project and use it ourselves. Questions, suggestions, and ambitious ideas are welcome.
+
+Include the version, device model, reproduction steps, and redacted error details when reporting a problem.
+
+This is my first project being prepared for a public release. I hope you enjoy it.
