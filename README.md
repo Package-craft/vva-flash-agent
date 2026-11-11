@@ -10,7 +10,7 @@ VVA runs on an Android phone. To work on a PC, plug in your USB drive, connect t
 
 **A phone, a USB cable, and a USB drive: a workspace you can carry with you.**
 
-VVA is in release preparation. This repository remains private and the packages have not been publicly released. This page describes the current implementation; each Release identifies its available build and validation status.
+VVA is available as a public preview. This page describes the current implementation; each Release identifies its available build and validation status.
 
 ## Why VVA?
 
@@ -48,7 +48,7 @@ For redistributed downloads, use the same version and language of `03 + 04`. Ext
 
 `90` contains licensing material and `99-SHA256SUMS.txt` lists checksums; these appear last. Licensing material is also bundled in the app and USB packages.
 
-1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/VVA/releases). Public downloads are not open yet.
+1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/VVA/releases).
 2. Install the APK, select a model provider in the app, and enter your own API key.
 3. Extract the complete USB package into a writable folder on your USB drive. Do not run it inside an archive preview.
 4. Enable Developer options and **USB debugging** in Android settings. Connect and unlock your phone, then accept that PC's debugging authorization.
@@ -134,4 +134,4 @@ Official contact: [vvaofficial@outlook.com](mailto:vvaofficial@outlook.com).
 
 Include the version, device model, reproduction steps, and redacted error details when reporting a problem.
 
-This is my first project being prepared for a public release. I hope you enjoy it.
+This is my first publicly released project. I hope you enjoy it.

@@ -60,4 +60,4 @@
 
 这只是分装方式，不是防篡改或安全认证。VVA 的分发约定见 `DISTRIBUTION.md`；第三方组件仍适用各自许可证。
 
-官方仓库：https://github.com/sunnyfox-qinghu/VVA（发布准备期间保持私有）。
+官方仓库：https://github.com/sunnyfox-qinghu/VVA。

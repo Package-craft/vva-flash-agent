@@ -1,4 +1,4 @@
-# VVA distribution rules — release preparation draft
+# VVA distribution rules
 
 VVA is currently free to use. Its development repository is not published. A decision to open source VVA later does not grant an open-source license today.
 
@@ -34,4 +34,4 @@ This split is a distribution arrangement. It is not encryption, DRM, a malware s
 - 不转载私人工作区、密钥、手机对话或本地下载的第三方工具二进制。
 - 用户可以定制自己使用的工具、技能和工作区；这些新增内容不因此成为官方内容。
 
-该分装并非加密或防病毒机制。正式对外发布前确认本草案及第三方告知文件。
+该分装并非加密或防病毒机制。第三方组件各自的许可见第三方告知文件。

@@ -64,4 +64,4 @@ Official downloads contain a complete app package and a complete USB package. In
 
 This is a packaging arrangement, not encryption or proof that a third-party download is safe. See `DISTRIBUTION.md` for the VVA-specific rules; all third-party licenses remain in effect.
 
-Official repository: https://github.com/sunnyfox-qinghu/VVA (currently private during release preparation).
+Official repository: https://github.com/sunnyfox-qinghu/VVA.
