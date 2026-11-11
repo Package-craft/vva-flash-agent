@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+**Android AI 助手（手机智能体），用于手机自动化与 USB 电脑控制。**
+
 **我想把 AI 工作台装进口袋，于是做了 VVA Agent。**
 
 **On your phone. Within reach of your PC.**

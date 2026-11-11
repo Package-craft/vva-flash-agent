@@ -2,6 +2,8 @@
 
 [简体中文](README.zh-CN.md)
 
+**Android AI agent for phone automation and Windows computer use over USB.**
+
 **I wanted an AI workspace I could carry in my pocket. So I built VVA Agent.**
 
 **On your phone. Within reach of your PC.**
