@@ -138,6 +138,6 @@ We love this project and use it ourselves. Questions, suggestions, and ambitious
 
 Official contact: [vvaofficial@outlook.com](mailto:vvaofficial@outlook.com).
 
-Include the version, device model, reproduction steps, and redacted error details when reporting a problem.
+If possible, include the app version, your device's operating system and version, reproduction steps, and redacted error details when sending feedback. This will help us diagnose the problem.
 
 This is my first publicly released project. I hope you enjoy it.
