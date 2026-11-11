@@ -2,15 +2,25 @@
 
 [简体中文](README.zh-CN.md)
 
-> Your personal AI assistant, based on your phone and ready for USB-connected PC work.
+**I wanted an AI workspace I could carry in my pocket. So I built VVA Agent.**
 
-Find information, organize files, keep track of tasks, write scripts, prepare files for rooting a device, or investigate a PC that is behaving strangely—even one showing signs of malware. Tell VVA what you want to accomplish and work through it together.
+**On your phone. Within reach of your PC.**
 
-VVA runs on an Android phone. To work on a PC, plug in your USB drive, connect the phone by USB, and start the bundled companion. Within the permissions you grant, VVA can read interfaces, operate applications, handle files, and run scripts.
+It lives on your Android phone, helping you find information, organize files, write scripts, and operate apps.
 
-**A phone, a USB cable, and a USB drive: a workspace you can carry with you.**
+When there is work to do on a Windows PC, connect a USB cable and plug in your USB drive. With your permission, VVA can operate software, read logs, and help troubleshoot problems.
 
-VVA is available as a public preview. This page describes the current implementation; each Release identifies its available build and validation status.
+**A phone, a cable, and a USB drive. Bring your files—and an assistant ready to work with them.**
+
+There is no VVA account to register and no VVA-hosted control relay. Records stay on your devices, and you choose the model. When you use a cloud model, relevant task content is still sent to that provider.
+
+The first public preview is now available. VVA is free to use; bring your own model API key.
+
+This is my first public project, and it is still growing. Try it on real tasks and tell me what feels smooth, what feels clumsy, and what surprises you. I would love to hear about it.
+
+[Download the public preview](https://github.com/sunnyfox-qinghu/VVA/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
+
+Build availability and validation status are documented in the Release notes.
 
 ## Why VVA?
 
