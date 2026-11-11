@@ -12,6 +12,8 @@ The official VVA repository provides the application package and the complete US
 
 The authorized redistribution edition consists of both:
 
+The redistribution main is universal; its language files are selected by the Chinese or English USB launcher. There is no separate English APK.
+
 1. **Main package**: the original VVA APK and `usb-payload/`, containing all companion files except the two primary Start/Stop entry scripts.
 2. **USB package**: only the two primary entry scripts (`启动.cmd` / `终止.cmd` in Chinese, or `Start.cmd` / `Stop.cmd` in English).
 
@@ -28,6 +30,7 @@ This split is a distribution arrangement. It is not encryption, DRM, a malware s
 目前 VVA 免费使用，开发源码暂不公开。本约定仅适用于 VVA 自有部分，不限制 Hermes 或其他第三方许可证已经授予的权利。
 
 - 官方：本体包 + 完整 U 盘包，正常解压使用。
+- 转载本体为中英文通用包；语言文件随所选中文或英文 U 盘脚本准备，手机 APK 不分语言。
 - 转载：本体包内有原 APK 及 `usb-payload/`；U 盘包只有启动和终止两个主入口脚本。
 - 接收者需把 `usb-payload/` 里面的文件复制到两个脚本旁边，保留目录结构；允许接收者在本地完成这一步。
 - 转载使用提供的分装版本，不修改 VVA、不夹带安装器/广告/其他程序、不对文件收费、不删除声明或签名、不冒充官方，并标注版本和官方来源。

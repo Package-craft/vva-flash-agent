@@ -60,8 +60,10 @@ Stop/Clean does not delete this workspace or the phone's conversations. Before s
 
 ## Redistribution edition
 
+Use the single universal main package (04) with the English USB scripts (06). Keep `.vva-language/` when copying the payload; the launcher selects the English companion files automatically. The APK is the same multilingual app in every download.
+
 Official downloads contain a complete app package and a complete USB package. In the authorized redistribution edition, **the main package contains `usb-payload/` (the app is `usb-payload/VVA.apk`); the small USB package contains only Start.cmd and Stop.cmd**. Copy the *contents* of `usb-payload/` beside those two scripts, preserving subdirectories. Do not place an extra `usb-payload` directory between the scripts and `runtime/` / `scripts/`.
 
 This is a packaging arrangement, not encryption or proof that a third-party download is safe. See `DISTRIBUTION.md` for the VVA-specific rules; all third-party licenses remain in effect.
 
-Official repository: https://github.com/sunnyfox-qinghu/vva-flash-agent.
+Official repository: https://github.com/Package-craft/vva-flash-agent.

@@ -20,7 +20,7 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 这是我的第一个公开项目，也是一个还在生长的尝试。欢迎拿真实任务来试试它——哪里顺手，哪里笨，哪里让你想说“这也能做？”都欢迎告诉我。
 
-[下载公开预览版](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
+[下载公开预览版](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
 
 可下载的构建及验收范围以对应 Release 说明为准。
 
@@ -47,20 +47,26 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 需要 **Android 11 或以上**、一根可传数据的 USB 线，以及 **Windows 10/11 x64** 电脑。U 盘包自带 Python 和 ADB，电脑无需另装 Python。
 
-### 先选下载组合
+### 下载顺序
 
-| 渠道 | 本体包 | U 盘包 |
-| --- | --- | --- |
-| 官方直接下载 | `01-*.apk`：安装到手机 | `02-*-USB-zh-CN.zip`：完整 U 盘目录，解压即备齐 |
-| 转载渠道 | `03-*-Redistribution-Main-zh-CN.zip`：含 APK 与补充文件 | `04-*-Redistribution-USB-zh-CN.zip`：只有启动、终止脚本 |
+| 顺序 | 文件 |
+| --- | --- |
+| 01 | [本体 APK（自动跟随手机语言）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/01-VVA-0.1.79-preview.1.apk) |
+| 02 | [中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/02-VVA-0.1.79-preview.1-USB-zh-CN.zip) |
+| 03 | [英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/03-VVA-0.1.79-preview.1-USB-en.zip) |
+| 04 | [转载本体（通用，含同一 APK 与补充文件）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/04-VVA-0.1.79-preview.1-Redistribution-Main.zip) |
+| 05 | [转载中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/05-VVA-0.1.79-preview.1-Redistribution-USB-zh-CN.zip) |
+| 06 | [转载英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/06-VVA-0.1.79-preview.1-Redistribution-USB-en.zip) |
 
-**普通用户选 `01 + 02` 即可，不用全部下载。** 英文 U 盘包选同组的 `-en.zip`；中英文各选一种即可。本体 APK 自带语言选择。
+**本体只有一个，内置中英文并自动跟随手机语言，无需另下英文 APK。**
 
-转载包需选同版本、同语言的 `03 + 04`：分别解压后，把 `VVA-Main/usb-payload/` **里面的全部内容**复制到 `VVA-USB/`，与启动、终止脚本放在同一层。不要把 `usb-payload` 整个目录再套进去。`04` 包很小是正常的，因为它只有两个脚本。完整操作见 [U 盘使用说明](USB.zh-CN.md)。
+官方用户下载 **01 + 02（中文）** 或 **01 + 03（英文）**。
 
-`90` 是许可资料，`99-SHA256SUMS.txt` 是文件校验表；它们放在下载列表最后，许可资料也已包含在本体和 U 盘包里。
+转载用户下载 **04 + 05（中文）** 或 **04 + 06（英文）**。把 `VVA-Main/usb-payload/` **内全部内容**复制到 `VVA-USB/` 两个入口脚本旁，保留 `.vva-language/`；启动脚本会自动准备对应的电脑端语言文件。两个 U 盘转载包均只有启动和终止脚本。
 
-1. 从官方 [Releases](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases) 获取匹配版本的 APK 和完整 U 盘包。
+`90` 为许可资料，`99-SHA256SUMS.txt` 为校验表，位于列表最后。
+
+1. 从官方 [Releases](https://github.com/Package-craft/vva-flash-agent/releases) 获取匹配版本的 APK 和完整 U 盘包。
 2. 安装 APK，在 App 中选择模型供应商，填入自己的 API Key。
 3. 将完整 U 盘包解压到 U 盘中的可写文件夹，不要在压缩包预览里直接运行。
 4. 在手机系统设置中开启开发者选项和 **USB 调试**。接上电脑后解锁手机，接受该电脑的调试授权。

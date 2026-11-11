@@ -20,7 +20,7 @@ The first public preview is now available. VVA is free to use; bring your own mo
 
 This is my first public project, and it is still growing. Try it on real tasks and tell me what feels smooth, what feels clumsy, and what surprises you. I would love to hear about it.
 
-[Download the public preview](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
+[Download the public preview](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
 
 Build availability and validation status are documented in the Release notes.
 
@@ -47,20 +47,26 @@ While a task is running, you can send more messages, add constraints, request a 
 
 You need **Android 11 or newer**, a USB **data** cable, and a **Windows 10/11 x64** PC. The USB package includes Python and ADB; the PC does not need a separate Python installation.
 
-### Choose your download pair
+### Download order
 
-| Channel | Main package | USB package |
-| --- | --- | --- |
-| Official download | `01-*.apk`: install on your phone | `02-*-USB-en.zip`: the complete USB folder |
-| Redistribution | `03-*-Redistribution-Main-en.zip`: APK and companion payload | `04-*-Redistribution-USB-en.zip`: Start/Stop scripts only |
+| Order | Download |
+| --- | --- |
+| 01 | [App APK (follows the phone language)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/01-VVA-0.1.79-preview.1.apk) |
+| 02 | [Complete USB package — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/02-VVA-0.1.79-preview.1-USB-zh-CN.zip) |
+| 03 | [Complete USB package — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/03-VVA-0.1.79-preview.1-USB-en.zip) |
+| 04 | [Universal redistribution main (same APK and companion payload)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/04-VVA-0.1.79-preview.1-Redistribution-Main.zip) |
+| 05 | [Redistribution USB — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/05-VVA-0.1.79-preview.1-Redistribution-USB-zh-CN.zip) |
+| 06 | [Redistribution USB — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/06-VVA-0.1.79-preview.1-Redistribution-USB-en.zip) |
 
-**Most users need only `01 + 02`, not every asset.** Pick either `-en.zip` or `-zh-CN.zip` within a group; the app itself includes language selection.
+**There is one app APK, with Chinese and English and automatic phone-language selection. No separate English app is needed.**
 
-For redistributed downloads, use the same version and language of `03 + 04`. Extract both, then copy **all contents inside** `VVA-Main/usb-payload/` into `VVA-USB/`, beside `Start.cmd` and `Stop.cmd`. Do not nest the `usb-payload` folder itself. The tiny `04` archive intentionally contains only those two scripts. See the [USB guide](USB.en.md) for the full workflow.
+Official downloads: **01 + 02 (Chinese)** or **01 + 03 (English)**.
 
-`90` contains licensing material and `99-SHA256SUMS.txt` lists checksums; these appear last. Licensing material is also bundled in the app and USB packages.
+Redistributed downloads: **04 + 05 (Chinese)** or **04 + 06 (English)**. Copy **all contents of** `VVA-Main/usb-payload/` beside the two entry scripts in `VVA-USB/`, including `.vva-language/`. The chosen launcher prepares the corresponding PC language files automatically. Each redistribution USB archive contains only its Start/Stop scripts.
 
-1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases).
+`90` contains licensing material and `99-SHA256SUMS.txt` contains checksums; both appear last.
+
+1. Get the matching APK and complete USB package from the official [Releases](https://github.com/Package-craft/vva-flash-agent/releases).
 2. Install the APK, select a model provider in the app, and enter your own API key.
 3. Extract the complete USB package into a writable folder on your USB drive. Do not run it inside an archive preview.
 4. Enable Developer options and **USB debugging** in Android settings. Connect and unlock your phone, then accept that PC's debugging authorization.

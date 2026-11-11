@@ -56,8 +56,10 @@
 
 ## 官方包与转载包
 
+转载本体统一下载 04，中文 U 盘脚本下载 05。复制补充文件时保留 `.vva-language/`，启动时自动准备中文电脑端文件。本体 APK 始终为同一个多语言版本。
+
 官方包维持“本体包 + 完整 U 盘包”。转载版本体包包含 `usb-payload/`（其中的 `VVA.apk` 为本体），转载版 U 盘包只有启动、终止两个脚本。接收者需将 `usb-payload/` **里面的内容**复制到两个脚本旁边，保持子目录结构；不能多嵌套一层目录。
 
 这只是分装方式，不是防篡改或安全认证。VVA 的分发约定见 `DISTRIBUTION.md`；第三方组件仍适用各自许可证。
 
-官方仓库：https://github.com/sunnyfox-qinghu/vva-flash-agent。
+官方仓库：https://github.com/Package-craft/vva-flash-agent。
