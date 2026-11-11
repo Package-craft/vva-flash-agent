@@ -1,8 +1,8 @@
-# VVA
+# VVA — Your first personal AI assistant, right on your phone
 
 [简体中文](README.zh-CN.md)
 
-> Your first personal secretary and assistant, right on your devices.
+> Your personal secretary for phone tasks and USB-connected PC work.
 
 Find information, organize files, keep track of tasks, write scripts, prepare files for rooting a device, or investigate a PC that is behaving strangely—even one showing signs of malware. Tell VVA what you want to accomplish and work through it together.
 
