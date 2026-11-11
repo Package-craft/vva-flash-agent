@@ -1,10 +1,10 @@
-# VVA Agent
+# VVA Flash Agent
 
 [简体中文](README.zh-CN.md)
 
 **Android AI agent for phone automation and Windows computer use over USB.**
 
-**I wanted an AI workspace I could carry in my pocket. So I built VVA Agent.**
+**I wanted an AI workspace I could carry in my pocket. So I built VVA Flash Agent.**
 
 **On your phone. Within reach of your PC.**
 
@@ -20,7 +20,7 @@ The first public preview is now available. VVA is free to use; bring your own mo
 
 This is my first public project, and it is still growing. Try it on real tasks and tell me what feels smooth, what feels clumsy, and what surprises you. I would love to hear about it.
 
-[Download the public preview](https://github.com/sunnyfox-qinghu/VVA-Agent/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
+[Download the public preview](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
 
 Build availability and validation status are documented in the Release notes.
 
@@ -60,7 +60,7 @@ For redistributed downloads, use the same version and language of `03 + 04`. Ext
 
 `90` contains licensing material and `99-SHA256SUMS.txt` lists checksums; these appear last. Licensing material is also bundled in the app and USB packages.
 
-1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/VVA-Agent/releases).
+1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/vva-flash-agent/releases).
 2. Install the APK, select a model provider in the app, and enter your own API key.
 3. Extract the complete USB package into a writable folder on your USB drive. Do not run it inside an archive preview.
 4. Enable Developer options and **USB debugging** in Android settings. Connect and unlock your phone, then accept that PC's debugging authorization.

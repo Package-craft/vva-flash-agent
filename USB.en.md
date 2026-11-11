@@ -1,4 +1,4 @@
-# VVA USB companion
+# VVA Flash Agent USB companion
 
 Use your Android phone as an agent terminal, with a USB cable and a portable Windows workspace. The companion includes Python and ADB; the PC does not need a separate Python installation.
 
@@ -64,4 +64,4 @@ Official downloads contain a complete app package and a complete USB package. In
 
 This is a packaging arrangement, not encryption or proof that a third-party download is safe. See `DISTRIBUTION.md` for the VVA-specific rules; all third-party licenses remain in effect.
 
-Official repository: https://github.com/sunnyfox-qinghu/VVA.
+Official repository: https://github.com/sunnyfox-qinghu/vva-flash-agent.

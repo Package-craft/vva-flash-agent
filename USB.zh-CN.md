@@ -1,4 +1,4 @@
-# VVA U 盘伴生包
+# VVA Flash Agent U 盘伴生包
 
 手机作为 Agent 终端，通过 USB 操作 Windows 电脑，并将作业保存在随盘工作区。包内带 Python 和 ADB，电脑不用另外安装 Python。
 
@@ -60,4 +60,4 @@
 
 这只是分装方式，不是防篡改或安全认证。VVA 的分发约定见 `DISTRIBUTION.md`；第三方组件仍适用各自许可证。
 
-官方仓库：https://github.com/sunnyfox-qinghu/VVA。
+官方仓库：https://github.com/sunnyfox-qinghu/vva-flash-agent。

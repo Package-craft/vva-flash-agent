@@ -1,4 +1,4 @@
-# VVA Android release signing
+# VVA Flash Agent Android release signing
 
 Certificate subject: `CN=VVA Release`  
 Key: RSA, 3072 bits  

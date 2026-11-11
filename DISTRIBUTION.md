@@ -1,4 +1,4 @@
-# VVA distribution rules
+# VVA Flash Agent distribution rules
 
 VVA is currently free to use. Its development repository is not published. A decision to open source VVA later does not grant an open-source license today.
 
