@@ -11,7 +11,7 @@ public certificate is not a private key.
 To inspect an APK with Android SDK Build Tools:
 
 ```text
-apksigner verify --verbose --print-certs VVA-0.1.79-preview.1.apk
+apksigner verify --verbose --print-certs 01-VVA-0.1.79-preview.1.apk
 ```
 
 Compare the signer with the official certificate, not merely the app name/icon.

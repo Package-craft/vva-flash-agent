@@ -35,6 +35,19 @@ While a task is running, you can send more messages, add constraints, request a 
 
 You need **Android 11 or newer**, a USB **data** cable, and a **Windows 10/11 x64** PC. The USB package includes Python and ADB; the PC does not need a separate Python installation.
 
+### Choose your download pair
+
+| Channel | Main package | USB package |
+| --- | --- | --- |
+| Official download | `01-*.apk`: install on your phone | `02-*-USB-en.zip`: the complete USB folder |
+| Redistribution | `03-*-Redistribution-Main-en.zip`: APK and companion payload | `04-*-Redistribution-USB-en.zip`: Start/Stop scripts only |
+
+**Most users need only `01 + 02`, not every asset.** Pick either `-en.zip` or `-zh-CN.zip` within a group; the app itself includes language selection.
+
+For redistributed downloads, use the same version and language of `03 + 04`. Extract both, then copy **all contents inside** `VVA-Main/usb-payload/` into `VVA-USB/`, beside `Start.cmd` and `Stop.cmd`. Do not nest the `usb-payload` folder itself. The tiny `04` archive intentionally contains only those two scripts. See the [USB guide](USB.en.md) for the full workflow.
+
+`90` contains licensing material and `99-SHA256SUMS.txt` lists checksums; these appear last. Licensing material is also bundled in the app and USB packages.
+
 1. Get the matching APK and complete USB package from the official [Releases](https://github.com/sunnyfox-qinghu/VVA/releases). Public downloads are not open yet.
 2. Install the APK, select a model provider in the app, and enter your own API key.
 3. Extract the complete USB package into a writable folder on your USB drive. Do not run it inside an archive preview.
