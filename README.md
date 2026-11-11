@@ -106,7 +106,7 @@ Lightning mode can increase model usage, battery drain, and heat. Enable it when
 ## Safety and permissions
 
 - **Use only devices you own or are authorized to operate.**
-- **Define the scope of administrator work.** Use `Start-Administrator.cmd` (`启动-管理员.cmd` in the Chinese package) and confirm Windows UAC yourself. Full Trust and Approve for me do not grant operating-system administrator rights.
+- **Define the scope of administrator work.** Use `Start-Administrator.cmd` (`启动-管理员.cmd` in the Chinese package) and confirm Windows UAC yourself.
 - **Please make sure you are using the official software.**
 - **End the session; keep the work.** `Stop.cmd` stops this package's companion, releases its session channel, and cleans its temporary session state. Workspaces, reports, and phone conversations remain. It does not erase all operating-system or third-party logs, caches, or changes, and it does not promise a traceless session. Incomplete cleanup is reported.
 - **Write down protection rules.** Put requirements in SOUL, skills, or task instructions—for example, “do not modify this directory,” “keep a backup before overwriting,” or “do not send this document to a cloud model.” Use permissions and backups as well; written instructions do not replace them. Keep passwords and API keys out of public feedback.
