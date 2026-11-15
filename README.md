@@ -20,7 +20,7 @@ The software is free, but you need to supply your own API key.
 
 This is my first public project, and it is still growing. Try it on real tasks and tell me what feels smooth, what feels clumsy, and what surprises you. I would love to hear about it.
 
-[Download the public preview](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
+[Download the public preview](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.89-preview.1) · [Send feedback](mailto:vvaofficial@outlook.com)
 
 Build availability and validation status are documented in the Release notes.
 
@@ -52,12 +52,12 @@ You need **Android 11 or newer**, a USB **data** cable, and a **Windows 10/11 x6
 
 | Order | Download |
 | --- | --- |
-| 01 | [App APK (follows the phone language)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/01-VVA-0.1.79-preview.1.apk) |
-| 02 | [Complete USB package — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/02-VVA-0.1.79-preview.1-USB-zh-CN.zip) |
-| 03 | [Complete USB package — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/03-VVA-0.1.79-preview.1-USB-en.zip) |
-| 04 | [Universal redistribution main (same APK and companion payload)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/04-VVA-0.1.79-preview.1-Redistribution-Main.zip) |
-| 05 | [Redistribution USB — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/05-VVA-0.1.79-preview.1-Redistribution-USB-zh-CN.zip) |
-| 06 | [Redistribution USB — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/06-VVA-0.1.79-preview.1-Redistribution-USB-en.zip) |
+| 01 | [App APK (follows the phone language)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/01-VVA-0.1.89-preview.1.apk) |
+| 02 | [Complete USB package — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/02-VVA-0.1.89-preview.1-USB-zh-CN.zip) |
+| 03 | [Complete USB package — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/03-VVA-0.1.89-preview.1-USB-en.zip) |
+| 04 | [Universal redistribution main (same APK and companion payload)](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/04-VVA-0.1.89-preview.1-Redistribution-Main.zip) |
+| 05 | [Redistribution USB — Chinese](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/05-VVA-0.1.89-preview.1-Redistribution-USB-zh-CN.zip) |
+| 06 | [Redistribution USB — English](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/06-VVA-0.1.89-preview.1-Redistribution-USB-en.zip) |
 
 **There is one app APK, with Chinese and English and automatic phone-language selection. No separate English app is needed.**
 
