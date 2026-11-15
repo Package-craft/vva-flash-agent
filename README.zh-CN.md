@@ -20,7 +20,7 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 这是我的第一个公开项目，也是一个还在生长的尝试。欢迎拿真实任务来试试它——哪里顺手，哪里笨，哪里让你想说“这也能做？”都欢迎告诉我。
 
-[下载公开预览版](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.79-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
+[下载公开预览版](https://github.com/Package-craft/vva-flash-agent/releases/tag/v0.1.89-preview.1) · [邮件反馈](mailto:vvaofficial@outlook.com)
 
 可下载的构建及验收范围以对应 Release 说明为准。
 
@@ -52,12 +52,12 @@ VVA 不需要注册自己的账号，也没有 VVA 云端控制中转。记录�
 
 | 顺序 | 文件 |
 | --- | --- |
-| 01 | [本体 APK（自动跟随手机语言）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/01-VVA-0.1.79-preview.1.apk) |
-| 02 | [中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/02-VVA-0.1.79-preview.1-USB-zh-CN.zip) |
-| 03 | [英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/03-VVA-0.1.79-preview.1-USB-en.zip) |
-| 04 | [转载本体（通用，含同一 APK 与补充文件）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/04-VVA-0.1.79-preview.1-Redistribution-Main.zip) |
-| 05 | [转载中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/05-VVA-0.1.79-preview.1-Redistribution-USB-zh-CN.zip) |
-| 06 | [转载英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.79-preview.1/06-VVA-0.1.79-preview.1-Redistribution-USB-en.zip) |
+| 01 | [本体 APK（自动跟随手机语言）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/01-VVA-0.1.89-preview.1.apk) |
+| 02 | [中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/02-VVA-0.1.89-preview.1-USB-zh-CN.zip) |
+| 03 | [英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/03-VVA-0.1.89-preview.1-USB-en.zip) |
+| 04 | [转载本体（通用，含同一 APK 与补充文件）](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/04-VVA-0.1.89-preview.1-Redistribution-Main.zip) |
+| 05 | [转载中文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/05-VVA-0.1.89-preview.1-Redistribution-USB-zh-CN.zip) |
+| 06 | [转载英文版 U 盘包](https://github.com/Package-craft/vva-flash-agent/releases/download/v0.1.89-preview.1/06-VVA-0.1.89-preview.1-Redistribution-USB-en.zip) |
 
 **本体只有一个，内置中英文并自动跟随手机语言，无需另下英文 APK。**
 
