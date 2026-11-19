@@ -12,6 +12,8 @@ It lives on your Android phone, helping you find information, organize files, wr
 
 When there is work to do on a Windows PC, connect a USB cable and plug in your USB drive. With your permission, VVA can operate software, read logs, and help troubleshoot problems.
 
+VVA can control a Windows PC or another Android phone over USB while you scroll through short videos on your own phone. For longer tasks, VVA can save its progress and keep working through the remaining steps without you having to say “continue” at every turn.
+
 **A phone, a cable, and a USB drive. Bring your files—and an assistant ready to work with them.**
 
 There is no VVA account to register and no VVA-hosted control relay. Records stay on your devices, and you choose the model. When you use a cloud model, relevant task content is still sent to that provider.
